@@ -34,11 +34,7 @@ const ArchiveSection = () => {
           description="A simple Markup editor that converts raw text to formatted text. 
           It has light and dark themes. It utilizes React Context, React Markup and other tools. "
           technologies={["React", "React Context", "Tailwind CSS"]}
-<<<<<<< HEAD
           link="https://denvudd-markup-editor.netlify.app/"
-=======
-          link="https://dmytro-yurin-portfolio.vercel.app/"
->>>>>>> 5a48e00 (work's link added)
         />
         <ArchiveCard
           title="Own UI Library on Pure JS"
@@ -112,7 +108,3 @@ const ArchiveSection = () => {
   );
 };
 
-<<<<<<< HEAD
-=======
-export default ArchiveSection;
->>>>>>> 5a48e00 (work's link added)
