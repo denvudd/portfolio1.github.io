@@ -108,3 +108,4 @@ const ArchiveSection = () => {
   );
 };
 
+export default ArchiveSection;
