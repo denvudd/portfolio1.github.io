@@ -86,7 +86,7 @@ const ProjectsSection = () => {
 
         <div className="flex flex-col xl:flex-row-reverse gap-6">
           <a
-            href="denvudd.github.io/react-games.github.io/"
+            href="https://denvud-react-games.netlify.app/"
             target="_blank"
             className="w-full xl:w-1/2 h-auto relative group"
             title="Open live project"
@@ -122,7 +122,8 @@ const ProjectsSection = () => {
               md:gap-5 justify-between text-textDark"
             >
               <li>React</li>
-              <li>RAWG API</li>
+              <li>React Context</li>
+              <li>API</li>
               <li>React Router</li>
               <li>React Image Gallery</li>
               <li
@@ -148,7 +149,7 @@ const ProjectsSection = () => {
                 <TbBrandGithub />
               </a>
               <a
-                href="denvudd.github.io/react-games.github.io/"
+                href="https://denvud-react-games.netlify.app/"
                 className="hover:text-textGreen duration-300"
                 target="_blank"
                 title="Open live project"

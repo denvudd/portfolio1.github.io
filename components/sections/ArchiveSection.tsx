@@ -33,8 +33,15 @@ const ArchiveSection = () => {
           title="Markup Editor"
           description="A simple Markup editor that converts raw text to formatted text. 
           It has light and dark themes. It utilizes React Context, React Markup and other tools. "
-          technologies={["React", "React Context", "Tailwind CSS"]}
+          technologies={["React Context", "TypeScript", "Tailwind"]}
           link="https://denvudd-markup-editor.netlify.app/"
+        />
+        <ArchiveCard
+          title="Speed Typing Game"
+          description="[Educational Project], a game for practicing typing speed within a certain time frame. At the end, 
+          it shows accuracy, number of errors, and the number of typed characters. "
+          technologies={["React", "TypeScript", "Tailwind CSS"]}
+          link="https://denvudd-speedtyping-game.netlify.app/"
         />
         <ArchiveCard
           title="Own UI Library on Pure JS"
@@ -60,7 +67,7 @@ const ArchiveSection = () => {
         />
         <ArchiveCard
           title="Marvel Comics Catalog"
-          description="Educational project, a Marvel comic book catalog application. You can
+          description="[Educational project], a Marvel comic book catalog application. You can
           view comics of characters, select a random one, or search for a specific
           one. Powered by Marvel API."
           technologies={["React", "Formik", "Yup", "React Helmet"]}
