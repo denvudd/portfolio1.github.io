@@ -44,12 +44,12 @@ const ArchiveSection = () => {
           link="https://denvudd-speedtyping-game.netlify.app/"
         />
         <ArchiveCard
-          title="Own UI Library on Pure JS"
-          description="Custom UI library in pure JavaScript using prototype inheritance. You
-          can work with classes, events, and also use ready-made
-          components such as carousel, collapse, and dropdown."
-          technologies={["JavaScript", "Prototype Inheritance"]}
-          link="https://denvudd.github.io/ui-library-example.github.io/"
+          title="Marvel Comics Catalog"
+          description="[Educational project], a Marvel comic book catalog application. You can
+          view comics of characters, select a random one, or search for a specific
+          one. Powered by Marvel API."
+          technologies={["React", "Formik", "Yup", "React Helmet"]}
+          link="https://denvudd.github.io/marvel-app.io/"
         />
         <ArchiveCard
           title="Slider Section Website"
@@ -64,14 +64,6 @@ const ArchiveSection = () => {
           can customize the time, pause and start the timer. At each launch, a corresponding message is displayed."
           technologies={["React", "React Slider", "React Progress"]}
           link="https://denvudd.github.io/pomodoro.github.io/"
-        />
-        <ArchiveCard
-          title="Marvel Comics Catalog"
-          description="[Educational project], a Marvel comic book catalog application. You can
-          view comics of characters, select a random one, or search for a specific
-          one. Powered by Marvel API."
-          technologies={["React", "Formik", "Yup", "React Helmet"]}
-          link="https://denvudd.github.io/marvel-app.io/"
         />
         {showMore && (
           <>
@@ -101,6 +93,34 @@ const ArchiveSection = () => {
           form."
                 technologies={["JavaScript", "PHP", "Calculate"]}
                 link="https://denvudd.github.io/food.github.io/"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              <ArchiveCard
+                title="Own UI Library on Pure JS"
+                description="Custom UI library in pure JavaScript using prototype inheritance. You
+          can work with classes, events, and also use ready-made
+          components such as carousel, collapse, and dropdown."
+                technologies={["JavaScript", "Prototype Inheritance"]}
+                link="https://denvudd.github.io/ui-library-example.github.io/"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              <ArchiveCard
+                title="Website for art pictures"
+                description="A website for selling artworks. You can view samples
+                of works, and also calculate the cost of the painting
+                through a special calculator or submit a request for feedback."
+                technologies={["JavaScript", "Gulp", "Webpack", "Less"]}
+                link="https://denvudd.github.io/ui-library-example.github.io/"
               />
             </motion.div>
           </>

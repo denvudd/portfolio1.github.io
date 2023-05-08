@@ -6,6 +6,7 @@ import { screenshot1 } from "@/public/assets";
 import { screenshot2 } from "@/public/assets";
 import { screenshot3 } from "@/public/assets";
 import { screenshot4 } from "@/public/assets";
+import { screenshot5 } from "@/public/assets";
 import { TbBrandGithub } from "react-icons/tb";
 import { RxOpenInNewWindow } from "react-icons/rx";
 
@@ -228,14 +229,14 @@ const ProjectsSection = () => {
 
         <div className="flex flex-col xl:flex-row-reverse gap-6">
           <a
-            href="https://denvudd.github.io/pictures.github.io/"
+            href="https://react-pizza-denvudd.vercel.app/"
             target="_blank"
             className="w-full xl:w-1/2 h-auto relative group"
             title="Open live project"
           >
             <div>
               <Image
-                src={screenshot2}
+                src={screenshot5}
                 alt="Project 2"
                 className="w-full h-full object-contain rounded-md"
                 loading="lazy"
@@ -250,25 +251,27 @@ const ProjectsSection = () => {
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
-              <h3 className="text-2xl font-bold">Website for art pictures</h3>
+              <h3 className="text-2xl font-bold">Pizza Store Application [Ed. Project]</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md xl:-mr-16">
-              A website for selling hand-painted artworks. You can view samples
-              of works, reviews, and also calculate the cost of the painting
-              through a special calculator or submit a request for feedback.
+              Pizza store application. Here you can view available pizzas,
+              select filters, search for pizza, add pizza to the cart, view
+              product details.
             </p>
             <ul
               className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
               md:gap-5 justify-between text-textDark"
             >
-              <li>JavaScript</li>
-              <li>Gulp</li>
-              <li>Webpack</li>
-              <li>Less</li>
+              <li>React</li>
+              <li>Redux Toolkit</li>
+              <li>Redux Persist</li>
+              <li>TypeScript</li>
+              <li>MockAPI</li>
+              <li>React Router</li>
             </ul>
             <div className="text-2xl flex gap-4">
               <a
-                href="https://github.com/denvudd/pictures.github.io"
+                href="https://github.com/denvudd/react-pizza.githuib.io"
                 className="hover:text-textGreen duration-300"
                 target="_blank"
                 title="Open GitHub Repo"
@@ -276,7 +279,7 @@ const ProjectsSection = () => {
                 <TbBrandGithub />
               </a>
               <a
-                href="https://denvudd.github.io/pictures.github.io/"
+                href="https://react-pizza-denvudd.vercel.app/"
                 className="hover:text-textGreen duration-300"
                 target="_blank"
                 title="Open live project"
