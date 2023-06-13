@@ -2,11 +2,13 @@
 import { motion } from "framer-motion";
 import SectionTitle from "../UI/SectionTitle";
 import Image from "next/image";
-import { screenshot1 } from "@/public/assets";
-import { screenshot2 } from "@/public/assets";
-import { screenshot3 } from "@/public/assets";
-import { screenshot4 } from "@/public/assets";
-import { screenshot5 } from "@/public/assets";
+import {
+  screenshot1,
+  screenshot2,
+  screenshot3,
+  screenshot4,
+  screenshot5,
+} from "@/public/assets";
 import { TbBrandGithub } from "react-icons/tb";
 import { RxOpenInNewWindow } from "react-icons/rx";
 
@@ -22,18 +24,24 @@ const ProjectsSection = () => {
       >
         <div className="flex flex-col xl:flex-row gap-6">
           <a
-            href="https://react-todo-app-denvudd.netlify.app/"
+            href="https://react-dbmovies.vercel.app/"
             target="_blank"
             className="w-full xl:w-1/2 h-auto relative group"
             title="Open live project"
           >
             <div>
               <Image
-                src={screenshot3}
+                src={screenshot2}
                 alt="Project 1"
-                className="w-full h-full object-contain rounded-md"
+                className="relative w-full h-full object-contain rounded-md"
                 loading="lazy"
               />
+              <span
+                className="absolute bottom-0 right-0 bg-violet-600 py-[0.5px] px-2 rounded-sm 
+                font-semibold tracking-wide"
+              >
+                BETA
+              </span>
             </div>
           </a>
           <div
@@ -42,31 +50,42 @@ const ProjectsSection = () => {
           >
             <div>
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
-                Featured Project
+                Featured Project [BETA]
               </p>
-              <h3 className="text-2xl font-bold">Todo Application</h3>
+              <h3 className="text-2xl font-bold">The Movie Database</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
-              A Todo web application that allows creating a list of tasks that
-              need to be done. Additionally, you can choose the color, category,
-              and importance of the task, as well as add a description if
-              desired or rearrange the order of the tasks using the
-              implementation of Drag & Drop.
+              A TMDB-inspired application. Search for movies, TV shows, or
+              actors, rate them, create lists for yourself and friends, and
+              discover new things about the world of cinema. Warning: the
+              project is in developing stage now so it's not stable version.
             </p>
             <ul
               className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
               md:gap-5 justify-between text-textDark"
             >
               <li>React</li>
+              <li>Next JS</li>
               <li>Redux RTK</li>
-              <li>Redux Persist</li>
-              <li>React DND</li>
-              <li>Framer Motion</li>
-              <li>Tailwind CSS</li>
+              <li>RTK Query</li>
+              <li>Typescript</li>
+              <li>API</li>
+              <li
+                className="hover:text-textGreen duration-300 inline-flex relative cursor-pointer h-6 
+              overflow-x-hidden group"
+              >
+                <a href="https://github.com/denvudd/react-dbmovies.github.io/blob/main/package.json">
+                  ...view other tools
+                </a>
+                <span
+                  className="absolute w-full h-[1px] bg-textGreen left-0 bottom-0 -translate-x-[110%] 
+                group-hover:translate-x-0 transition-transform duration-500"
+                ></span>
+              </li>
             </ul>
             <div className="text-2xl flex gap-4">
               <a
-                href="https://github.com/denvudd/react-todo-app.github.io"
+                href="https://github.com/denvudd/react-dbmovies.github.io"
                 className="hover:text-textGreen duration-300"
                 target="_blank"
                 title="Open GitHub Repo"
@@ -74,7 +93,7 @@ const ProjectsSection = () => {
                 <TbBrandGithub />
               </a>
               <a
-                href="https://react-todo-app-denvudd.netlify.app/"
+                href="https://react-dbmovies.vercel.app/"
                 className="hover:text-textGreen duration-300"
                 target="_blank"
                 title="Open live project"
@@ -163,14 +182,14 @@ const ProjectsSection = () => {
 
         <div className="flex flex-col xl:flex-row gap-6">
           <a
-            href="https://denvudd.github.io/react-weather-app.github.io/"
+            href="https://react-todo-app-denvudd.netlify.app/"
             target="_blank"
             className="w-full xl:w-1/2 h-auto relative group"
             title="Open live project"
           >
             <div>
               <Image
-                src={screenshot1}
+                src={screenshot3}
                 alt="Project 1"
                 className="w-full h-full object-contain rounded-md"
                 loading="lazy"
@@ -185,30 +204,29 @@ const ProjectsSection = () => {
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
-              <h3 className="text-2xl font-bold">
-                Weather Foreact Application
-              </h3>
+              <h3 className="text-2xl font-bold">Todo Application</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
-              A web application that shows the current weather and also displays
-              the weather forecast for the next week. You can check the weather
-              by simply entering the name of the city in the search bar or you
-              can view the weather by determining the user's current
-              geolocation.
+              A Todo web application that allows creating a list of tasks that
+              need to be done. Additionally, you can choose the color, category,
+              and importance of the task, as well as add a description if
+              desired or rearrange the order of the tasks using the
+              implementation of Drag & Drop.
             </p>
             <ul
               className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
               md:gap-5 justify-between text-textDark"
             >
               <li>React</li>
-              <li>Open Weather API</li>
-              <li>React Tostify</li>
-              <li>Luxon</li>
+              <li>Redux RTK</li>
+              <li>Redux Persist</li>
+              <li>React DND</li>
+              <li>Framer Motion</li>
               <li>Tailwind CSS</li>
             </ul>
             <div className="text-2xl flex gap-4">
               <a
-                href="https://github.com/denvudd/react-weather-app.github.io"
+                href="https://github.com/denvudd/react-todo-app.github.io"
                 className="hover:text-textGreen duration-300"
                 target="_blank"
                 title="Open GitHub Repo"
@@ -216,7 +234,7 @@ const ProjectsSection = () => {
                 <TbBrandGithub />
               </a>
               <a
-                href="https://denvudd.github.io/react-weather-app.github.io/"
+                href="https://react-todo-app-denvudd.netlify.app/"
                 className="hover:text-textGreen duration-300"
                 target="_blank"
                 title="Open live project"
@@ -251,7 +269,9 @@ const ProjectsSection = () => {
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
-              <h3 className="text-2xl font-bold">Pizza Store Application [Ed. Project]</h3>
+              <h3 className="text-2xl font-bold">
+                Pizza Store Application [Ed. Project]
+              </h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md xl:-mr-16">
               Pizza store application. Here you can view available pizzas,

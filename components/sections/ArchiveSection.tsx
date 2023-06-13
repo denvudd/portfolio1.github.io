@@ -22,6 +22,14 @@ const ArchiveSection = () => {
         whileInView={{ y: 0, opacity: 1 }}
       >
         <ArchiveCard
+          title="Weather Foreact App"
+          description="A web application that shows the current weather and also displays
+          the weather forecast for the next week. You can check the weather
+          by simply entering the name of the city."
+          technologies={["React", "API", "Talwind", "Luxon", "Tostify"]}
+          link="https://denvudd.github.io/react-quiz-app.github.io/"
+        />
+        <ArchiveCard
           title="React Quiz Application"
           description="A small application that allows to take a quiz and answer questions
             on various topics. The data for the questions is taken from the
@@ -52,13 +60,6 @@ const ArchiveSection = () => {
           link="https://denvudd.github.io/marvel-app.io/"
         />
         <ArchiveCard
-          title="Slider Section Website"
-          description="A simple but interesting website for selling educational materials. Two
-          pages were created, each section of which switches in a slider. Using YouTube API."
-          technologies={["JavaScript", "OOP", "API", "Gulp", "Webpack"]}
-          link="https://denvudd.github.io/loan.github.io/"
-        />
-        <ArchiveCard
           title="Pomodoro Timer App"
           description="A simple timer application that works using the Pomodoro technique. You
           can customize the time, pause and start the timer. At each launch, a corresponding message is displayed."
@@ -67,6 +68,20 @@ const ArchiveSection = () => {
         />
         {showMore && (
           <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
+            >
+              <ArchiveCard
+                title="Slider Section Website"
+                description="A simple but interesting website for selling educational materials. Two
+      pages were created, each section of which switches in a slider. Using YouTube API."
+                technologies={["JavaScript", "OOP", "API", "Gulp", "Webpack"]}
+                link="https://denvudd.github.io/loan.github.io/"
+              />
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
